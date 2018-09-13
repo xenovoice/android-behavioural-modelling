@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Activity Recognition</string>
+    <string name="activity">Activity</string>
+    <string name="probability">Probability</string>
+    <string name="running">Running</string>
+    <string name="sitting">Sitting</string>
+    <string name="standing">Standing</string>
+    <string name="walking">Walking</string>
+
+    <!-- HistoryActivity -->
+    <color name="MaterialGray200">#eeeeee</color>
+
+    <!-- Loading -->
+    <string name="progressActivityEmptyTitlePlaceholder">Nothing Here</string>
+    <string name="progressActivityEmptyContentPlaceholder">We couldn\'t find anything. Tap the button to take your first image</string>
+
+    <!-- TileMenuActivity -->
+    <string name="weeklyHistory">Weekly Stats</string>
+    <string name="dailyHistory">Daily Stats</string>
+    <string name="fitnessHistory">Fitness Stats</string>
+    <string name="foodHistory">Food Consumption Stats</string>
+    <string name="locationHistory">Location Stats</string>
+</resources>
+

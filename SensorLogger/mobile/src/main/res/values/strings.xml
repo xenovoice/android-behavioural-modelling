@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sensor Logger</string>
+    <string-array name="users_array">
+        <item>Corliss (01)</item>
+        <item>Kian Boon (02)</item>
+        <item>Nicholas (03)</item>
+        <item>Yih Jin (04)</item>
+    </string-array>
+    <string-array name="activities_array">
+        <item>Arm Swing</item>
+        <item>Commuting</item>
+        <item>Drinking</item>
+        <item>Eating with Knife</item>
+        <item>Eating with Spoon</item>
+        <item>Jumping Jack</item>
+        <item>Typing</item>
+        <item>Walking</item>k
+    </string-array>
+</resources>

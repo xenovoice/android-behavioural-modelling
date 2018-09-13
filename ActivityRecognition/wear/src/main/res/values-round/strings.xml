@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Activity Recognition</string>
+    <string name="activity">Activity</string>
+    <string name="probability">Probability</string>
+    <string name="eatingdrinking">Eating&amp;Drinking</string>
+    <string name="jumpingjack">Jumping Jack</string>
+    <string name="running">Running</string>
+    <string name="walking">Walking</string>
+</resources>

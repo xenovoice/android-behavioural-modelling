@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/MaterialGray200"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/history_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="Your active level today is"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/activeLevel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="GOOD!"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/activityImage"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:padding="8dp"
+            android:src="@mipmap/ic_activity"/>
+
+        <LinearLayout
+            android:id="@+id/progressBarLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HI"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:maxLines="1" />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:padding="10dp"
+                app:rcProgress="10"
+                app:rcMax="100"
+                app:rcRadius="1dp"
+                app:rcReverse="false"
+                app:rcProgressColor="#ff9900"
+                app:rcBackgroundColor="#e5e2e2" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

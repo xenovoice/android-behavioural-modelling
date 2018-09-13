@@ -1,0 +1,60 @@
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8">
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_activity"
+
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_alignTop="@+id/imageViewIcon"
+            android:layout_toRightOf="@+id/imageViewIcon"
+            android:layout_toEndOf="@+id/imageViewIcon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Activity"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSize_16"/>
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Recorded on date"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/textViewActivity"
+                android:textSize="@dimen/textSize_16"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

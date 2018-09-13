@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xv.activityrecognition.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:keepScreenOn="true">
+
+    <TableLayout
+        android:id="@+id/prob_tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="22dp">
+
+        <TableRow
+            android:id="@+id/title_row"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="22dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_weight="1"
+                android:text="@string/activity"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:text="@string/probability"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/running_row"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/running_title"
+                android:layout_weight="1"
+                android:text="@string/running"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/running_prob"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/sitting_row"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/sitting_title"
+                android:layout_weight="1"
+                android:text="@string/sitting"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sitting_prob"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/standing_row"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/standing_title"
+                android:layout_weight="1"
+                android:text="@string/standing"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/standing_prob"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/walking_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/walking_title"
+                android:layout_weight="1"
+                android:text="@string/walking"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/walking_prob"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/prob_tableLayout"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/wearHistoryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wear Activity History"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

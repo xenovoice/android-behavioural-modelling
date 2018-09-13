@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WeeklyStatsActivity">
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CURRENT WEEK"
+        android:textAlignment="center"
+        android:paddingTop="40dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/currentWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label1"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/weeklyStatsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentWeek"
+        android:padding="15dp">
+    </ListView>
+
+</RelativeLayout>
